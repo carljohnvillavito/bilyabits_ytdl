@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilyabits YTDL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container card">
+            <div class="header">
+                <i class="fas fa-bolt"></i>
+                <h1>Bilyabits YTDL</h1>
+            </div>
+            <p class="subtitle">Your one-stop solution for high-quality YouTube downloads.</p>
+
+            <div class="input-container">
+                <input type="text" id="video-url" placeholder="Paste YouTube video URL here">
+                <button id="get-video-info-btn">
+                    <i class="fas fa-search"></i>
+                    <span>Convert</span>
+                </button>
+            </div>
+
+            <div id="loader" class="loader-container hidden">
+                <div class="spinner"></div>
+                <p>Converting video...</p>
+            </div>
+
+            <div id="video-info-container" class="hidden">
+                <div class="video-preview">
+                    <img id="thumbnail" src="" alt="Video Thumbnail">
+                    <h2 id="video-title"></h2>
+                </div>
+                <div class="download-options">
+                    <div class="quality-section">
+                        <h3><i class="fas fa-video"></i> Video Formats</h3>
+                        <div class="quality-container">
+                            <select id="video-quality"></select>
+                            <button id="download-video-btn" class="download-btn">
+                                <i class="fas fa-download"></i>
+                                <span>Download Video</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="quality-section">
+                        <h3><i class="fas fa-music"></i> Audio Formats</h3>
+                        <div class="quality-container">
+                            <select id="audio-quality"></select>
+                            <button id="download-audio-btn" class="download-btn">
+                                <i class="fas fa-download"></i>
+                                <span>Download Audio</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="error-message" class="error-message hidden">
+                <p>Something went wrong. Please check the URL and try again.</p>
+            </div>
+        </div>
+
+        <!-- Introduction Card (NOTE: added 'card' class and renamed for consistency) -->
+        <div class="intro-container card">
+            <section id="about">
+                <h2><i class="fas fa-info-circle"></i> What is Bilyabits YTDL?</h2>
+                <p>Bilyabits YTDL is a powerful, fast, and secure web-based tool that allows you to download your favorite YouTube videos and audio tracks with ease. Simply paste a YouTube URL, choose your desired quality, and get your file in seconds. No software installation required.</p>
+            </section>
+
+            <section id="features">
+                <h2><i class="fas fa-star"></i> Features</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-film"></i>
+                        <h3>High-Quality Video</h3>
+                        <p>Download videos in a range of qualities, from 144p up to stunning 1080p HD.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-volume-high"></i>
+                        <h3>Audio Extraction</h3>
+                        <p>Easily convert videos to audio-only formats like MP3/M4A for your music library.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-shield-halved"></i>
+                        <h3>Safe & Secure</h3>
+                        <p>Your downloads are processed securely without compromising your privacy or safety.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Fully Responsive</h3>
+                        <p>Enjoy a seamless experience on any device, whether it's your desktop, tablet, or phone.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="faq">
+                <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is this service free to use?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, Bilyabits YTDL is completely free for personal use. We aim to provide a simple, accessible tool for everyone.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is it safe to download files from here?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. We act as a middleman to fetch the download link directly from YouTube's servers. We do not alter the files or inject any malicious software. Your safety is our priority.</p>
+                    </div>
+                </div>
+                 <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What file formats are supported?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We typically provide downloads in MP4 for video and M4A or WEBM for audio, which are widely compatible with most devices and media players.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="owners">
+                <h2><i class="fas fa-user-astronaut"></i> Owner</h2>
+                <p>Bilyabits YTDL is a project developed by <a href="https://facebook.com/carljohn.villavito">Carl John Villavito</a> dedicated to building simple and powerful tools for the web.
+                <br>© 2025 No Copyright.</p>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
